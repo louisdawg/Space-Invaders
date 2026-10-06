@@ -172,7 +172,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0.2264151, g: 0.09291563, b: 0.09291563, a: 0.392}
+  m_Color: {r: 0.4433962, g: 0.094117135, b: 0.094117135, a: 0.392}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -716,7 +716,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 5428657223235419958, guid: fa82f924a47896b4a90035c8b3874b94, type: 3}
   minInterval: 1.2
   maxInterval: 2.5
-  maxBullets: 3
+  maxBullets: 6
 --- !u!4 &598087122
 Transform:
   m_ObjectHideFlags: 0
@@ -816,6 +816,56 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &724573811
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 724573812}
+  - component: {fileID: 724573813}
+  m_Layer: 0
+  m_Name: HeartSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &724573812
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 724573811}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.3332, y: -3.08734, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &724573813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 724573811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 870be251089de93468eefeb1fe72e817, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HeartSpawner
+  heartPrefab: {fileID: 1268947681489751322, guid: 0b5176cb83977f64a9d0b924cf89ef1b, type: 3}
+  player: {fileID: 1006568831}
+  minX: -8
+  maxX: 9.6
+  minInterval: 5
+  maxInterval: 10
 --- !u!1 &767886949
 GameObject:
   m_ObjectHideFlags: 0
@@ -1816,7 +1866,7 @@ Transform:
   m_GameObject: {fileID: 1240560229}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -9.5, y: -0.96176004, z: 0}
+  m_LocalPosition: {x: -8, y: -1, z: 0}
   m_LocalScale: {x: 1.11, y: 4.0526, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1954,7 +2004,7 @@ Transform:
   m_GameObject: {fileID: 1381153153}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 10.9845, y: -0.96176004, z: 0}
+  m_LocalPosition: {x: 9.6, y: -1, z: 0}
   m_LocalScale: {x: 1.11, y: 4.0526, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2636,3 +2686,4 @@ SceneRoots:
   - {fileID: 767886950}
   - {fileID: 1001227328}
   - {fileID: 598087122}
+  - {fileID: 724573812}
