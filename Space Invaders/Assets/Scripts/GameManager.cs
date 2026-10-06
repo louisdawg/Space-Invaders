@@ -15,6 +15,9 @@ public class GameManager : MonoBehaviour
 
     public bool IsGameOver { get { return isGameOver; } }
 
+    private float invulnerableUntil = 0f;
+    public bool HasFullLives { get{return lives >= MaxLives; } }
+
     public int Score
     {
         get { return score; }
@@ -60,9 +63,24 @@ public class GameManager : MonoBehaviour
     public void RestartGame()
     {
         Time.timeScale = 1f;
+        invulnerableUntil = 0f;
         isGameOver = false;
         score = 0;
         lives = MaxLives;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    public void TakeDamage()
+    {
+        if (isGameOver || Time.time < invulnerableUntil) return;
+        invulnerableUntil = Time.time + 1f;
+        Lives--;
+    }
+
+    public bool TryAddLife()
+    {
+        if (lives >= MaxLives) return false;
+        Lives++;
+        return true;
     }
 }

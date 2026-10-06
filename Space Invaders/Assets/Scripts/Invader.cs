@@ -6,7 +6,7 @@ public class Invader : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            GameManager.Instance.Lives--;
+            GameManager.Instance.TakeDamage();
             Destroy(gameObject);
         }
     }
