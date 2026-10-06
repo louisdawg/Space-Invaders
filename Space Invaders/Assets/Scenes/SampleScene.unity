@@ -1987,6 +1987,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1268319200}
   - component: {fileID: 1268319199}
+  - component: {fileID: 1268319201}
   m_Layer: 0
   m_Name: background1
   m_TagString: Untagged
@@ -2068,6 +2069,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1268319201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1268319198}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96f4c6999789ff54f8e655c3780a407e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ScrollingBackground
+  speed: 0.5
 --- !u!1 &1381153153
 GameObject:
   m_ObjectHideFlags: 0
@@ -2415,6 +2429,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1906242378}
   - component: {fileID: 1906242377}
+  - component: {fileID: 1906242379}
   m_Layer: 0
   m_Name: background2
   m_TagString: Untagged
@@ -2490,12 +2505,25 @@ Transform:
   m_GameObject: {fileID: 1906242376}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -25.6, z: 0}
+  m_LocalPosition: {x: 0, y: 25.6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1906242379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1906242376}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96f4c6999789ff54f8e655c3780a407e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ScrollingBackground
+  speed: 0.5
 --- !u!1 &1936186512
 GameObject:
   m_ObjectHideFlags: 0

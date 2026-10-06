@@ -17,6 +17,9 @@ public class GameManager : MonoBehaviour
 
     private float invulnerableUntil = 0f;
     public bool HasFullLives { get{return lives >= MaxLives; } }
+    
+    private float doubleShotUntil = 0f;
+    public bool DoubleShotActive { get { return Time.time < doubleShotUntil; } }
 
     public int Score
     {
@@ -64,6 +67,7 @@ public class GameManager : MonoBehaviour
     {
         Time.timeScale = 1f;
         invulnerableUntil = 0f;
+        doubleShotUntil = 0f;
         isGameOver = false;
         score = 0;
         lives = MaxLives;
@@ -82,5 +86,10 @@ public class GameManager : MonoBehaviour
         if (lives >= MaxLives) return false;
         Lives++;
         return true;
+    }
+    
+    public void ActivateDoubleShot(float duration)
+    {
+        doubleShotUntil = Time.time + duration;
     }
 }
