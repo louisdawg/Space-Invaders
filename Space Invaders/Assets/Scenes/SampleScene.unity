@@ -886,7 +886,7 @@ GameObject:
   - component: {fileID: 817381725}
   - component: {fileID: 817381724}
   m_Layer: 5
-  m_Name: FinalScoreText
+  m_Name: GameOverText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2253,7 +2253,7 @@ MonoBehaviour:
   fullHeart: {fileID: -1218823883695198015, guid: 5c28050991c45754db36be46915a2ca3, type: 3}
   emptyHeart: {fileID: -511133062249068954, guid: 4364ed0dafcf71a62980df9c44d9d92b, type: 3}
   gameOverPanel: {fileID: 240466468}
-  finalScoreText: {fileID: 817381724}
+  gameOverText: {fileID: 817381724}
   restartButton: {fileID: 960706594}
 --- !u!4 &1936186514
 Transform:
@@ -2521,7 +2521,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1369198536021463816, guid: cfaaedcfad4deb6d2b5cc7d491a0f9a4, type: 3}
       propertyPath: moveDistance
-      value: 0.2
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 5526698032055973638, guid: cfaaedcfad4deb6d2b5cc7d491a0f9a4, type: 3}
       propertyPath: m_LocalPosition.x

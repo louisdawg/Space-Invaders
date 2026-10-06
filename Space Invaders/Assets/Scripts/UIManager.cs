@@ -13,7 +13,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] private Sprite emptyHeart;
     
     [SerializeField] private GameObject gameOverPanel;
-    [SerializeField] private TMP_Text finalScoreText;
+    [SerializeField] private TMP_Text gameOverText;
     [SerializeField] private Button restartButton;
     
     private void Start()
@@ -50,7 +50,7 @@ public class UIManager : MonoBehaviour
     
     public void ShowGameOver()
     {
-        finalScoreText.text = "Score: " + GameManager.Instance.Score;
+        gameOverText.text = "GAME OVER\n<size=50%>Score: " + GameManager.Instance.Score + "</size>";
         gameOverPanel.SetActive(true);
     }
 }
