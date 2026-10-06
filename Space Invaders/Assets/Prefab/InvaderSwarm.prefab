@@ -1486,7 +1486,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cee8d7fa96970bee81200d0835b7c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InvaderSwarm
-  moveDistance: 0.5
+  moveDistance: 0.7
   seconds: 1
   timer: 0
   direction: 1
