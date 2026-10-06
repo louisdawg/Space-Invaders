@@ -50,7 +50,7 @@ public class UIManager : MonoBehaviour
     
     public void ShowGameOver()
     {
-        gameOverText.text = "GAME OVER\n<size=50%>Score: " + GameManager.Instance.Score + "</size>";
+        gameOverText.text = "Score: " + GameManager.Instance.Score.ToString();
         gameOverPanel.SetActive(true);
     }
 }
