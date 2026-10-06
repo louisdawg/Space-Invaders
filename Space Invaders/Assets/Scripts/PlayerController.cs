@@ -28,8 +28,17 @@ public class PlayerController : MonoBehaviour
             timer += Time.deltaTime;
         }   else if (Input.GetKeyDown(KeyCode.Space))
         {
-            Instantiate(bulletPrefab, transform.position, Quaternion.identity);
-            timer = 0;
+            if (GameManager.Instance.DoubleShotActive)
+            {
+                Instantiate(bulletPrefab, transform.position + Vector3.left * 0.3f, Quaternion.identity);
+                Instantiate(bulletPrefab, transform.position + Vector3.right * 0.3f, Quaternion.identity);
+                timer = 0;
+            }
+            else
+            {
+                Instantiate(bulletPrefab, transform.position, Quaternion.identity);
+                timer = 0;
+            }
         }
     }
 }
