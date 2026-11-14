@@ -3,6 +3,8 @@ using UnityEngine;
 public class PowerUpSpawner : MonoBehaviour
 {
     [SerializeField] private GameObject powerUpPrefab;
+    [SerializeField] private GameObject bombPrefab;
+    [SerializeField] private float bombChance = 0.3f;
     [SerializeField] private Transform player;
     [SerializeField] private float minX = -8f;
     [SerializeField] private float maxX = 9.6f;
@@ -26,9 +28,13 @@ public class PowerUpSpawner : MonoBehaviour
         ResetTimer();
 
         if (FindFirstObjectByType<PowerUpPickup>() is not null) return;
+        if (FindFirstObjectByType<BombPickup>() is not null) return;
+
+        GameObject prefab = Random.value < bombChance ? bombPrefab : powerUpPrefab;
+        if (prefab == null) prefab = powerUpPrefab;
 
         float x = Random.Range(minX, maxX);
-        Instantiate(powerUpPrefab, new Vector3(x, player.position.y, 0), Quaternion.identity);
+        Instantiate(prefab, new Vector3(x, player.position.y, 0), Quaternion.identity);
     }
     
     private void ResetTimer()

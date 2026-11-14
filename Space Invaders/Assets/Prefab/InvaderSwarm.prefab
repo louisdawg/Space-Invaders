@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4083672385298998619}
   - component: {fileID: 3085033220166105557}
   - component: {fileID: 2673306915208353062}
+  - component: {fileID: 7000000000000000101}
   m_Layer: 0
   m_Name: Invader (1)
   m_TagString: Invader
@@ -192,6 +193,7 @@ GameObject:
   - component: {fileID: 3688282016758950117}
   - component: {fileID: 2401346350176728171}
   - component: {fileID: 3358006297972152472}
+  - component: {fileID: 7000000000000000102}
   m_Layer: 0
   m_Name: Invader
   m_TagString: Invader
@@ -371,6 +373,7 @@ GameObject:
   - component: {fileID: 4701091825540129620}
   - component: {fileID: 5260974683154372262}
   - component: {fileID: 1566151992471687760}
+  - component: {fileID: 7000000000000000103}
   m_Layer: 0
   m_Name: Invader (6)
   m_TagString: Invader
@@ -550,6 +553,7 @@ GameObject:
   - component: {fileID: 7730924479184983110}
   - component: {fileID: 8734135409638328520}
   - component: {fileID: -649465271882996677}
+  - component: {fileID: 7000000000000000104}
   m_Layer: 0
   m_Name: Invader (5)
   m_TagString: Invader
@@ -729,6 +733,7 @@ GameObject:
   - component: {fileID: 8175133869977468204}
   - component: {fileID: 7138148008483578274}
   - component: {fileID: 7838102752285822289}
+  - component: {fileID: 7000000000000000105}
   m_Layer: 0
   m_Name: Invader (2)
   m_TagString: Invader
@@ -908,6 +913,7 @@ GameObject:
   - component: {fileID: 8521025062594160412}
   - component: {fileID: 7222894322968312722}
   - component: {fileID: 7779303400225068897}
+  - component: {fileID: 7000000000000000106}
   m_Layer: 0
   m_Name: Invader (3)
   m_TagString: Invader
@@ -1087,6 +1093,7 @@ GameObject:
   - component: {fileID: 5343939674725847710}
   - component: {fileID: 6365099105738329616}
   - component: {fileID: 6312952449516823267}
+  - component: {fileID: 7000000000000000107}
   m_Layer: 0
   m_Name: Invader
   m_TagString: Invader
@@ -1266,6 +1273,7 @@ GameObject:
   - component: {fileID: 5582402444890896699}
   - component: {fileID: 6846753781056038325}
   - component: {fileID: 5822535766944319814}
+  - component: {fileID: 7000000000000000108}
   m_Layer: 0
   m_Name: Invader (4)
   m_TagString: Invader
@@ -1565,3 +1573,115 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &7000000000000000101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1380057245998711222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a7c1e5d9b4f42d8a6c0e2f1b7d94c38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InvaderSpin
+  minRotationSpeed: 30
+  maxRotationSpeed: 120
+--- !u!114 &7000000000000000102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1775971136690211848}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a7c1e5d9b4f42d8a6c0e2f1b7d94c38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InvaderSpin
+  minRotationSpeed: 30
+  maxRotationSpeed: 120
+--- !u!114 &7000000000000000103
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2947126393673850562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a7c1e5d9b4f42d8a6c0e2f1b7d94c38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InvaderSpin
+  minRotationSpeed: 30
+  maxRotationSpeed: 120
+--- !u!114 &7000000000000000104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4666624764743643307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a7c1e5d9b4f42d8a6c0e2f1b7d94c38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InvaderSpin
+  minRotationSpeed: 30
+  maxRotationSpeed: 120
+--- !u!114 &7000000000000000105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6555275499136997825}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a7c1e5d9b4f42d8a6c0e2f1b7d94c38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InvaderSpin
+  minRotationSpeed: 30
+  maxRotationSpeed: 120
+--- !u!114 &7000000000000000106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6758266420972520433}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a7c1e5d9b4f42d8a6c0e2f1b7d94c38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InvaderSpin
+  minRotationSpeed: 30
+  maxRotationSpeed: 120
+--- !u!114 &7000000000000000107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7035625884472194675}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a7c1e5d9b4f42d8a6c0e2f1b7d94c38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InvaderSpin
+  minRotationSpeed: 30
+  maxRotationSpeed: 120
+--- !u!114 &7000000000000000108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7418063929204202966}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a7c1e5d9b4f42d8a6c0e2f1b7d94c38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InvaderSpin
+  minRotationSpeed: 30
+  maxRotationSpeed: 120

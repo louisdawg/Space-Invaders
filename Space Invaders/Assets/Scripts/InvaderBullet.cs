@@ -8,7 +8,8 @@ public class InvaderBullet : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        GetComponent<Rigidbody2D>().linearVelocity = Vector2.down * speed;
+        // The shooter sets the rotation; the laser flies along its local up axis.
+        GetComponent<Rigidbody2D>().linearVelocity = transform.up * speed;
         Destroy(gameObject, lifetime);
     }
 

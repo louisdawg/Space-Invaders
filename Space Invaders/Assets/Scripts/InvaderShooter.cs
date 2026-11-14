@@ -8,10 +8,12 @@ public class InvaderShooter : MonoBehaviour
     [SerializeField] private int maxBullets = 3;
     
     private float timer;
+    private PlayerController player;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        player = FindFirstObjectByType<PlayerController>();
         ResetTimer();
     }
 
@@ -39,6 +41,15 @@ public class InvaderShooter : MonoBehaviour
         if (invaders.Length == 0) return;
 
         Invader shooter = invaders[Random.Range(0, invaders.Length)];
-        Instantiate(bulletPrefab, shooter.transform.position, Quaternion.identity);
+
+        // Aim the laser at the player and rotate it into the shot direction.
+        Vector3 direction = Vector3.down;
+        if (player != null)
+        {
+            direction = (player.transform.position - shooter.transform.position).normalized;
+        }
+
+        Quaternion rotation = Quaternion.FromToRotation(Vector3.up, direction);
+        Instantiate(bulletPrefab, shooter.transform.position, rotation);
     }
 }

@@ -81,6 +81,17 @@ public class GameManager : MonoBehaviour
         Lives--;
     }
 
+    public void IncreaseScore(int amount)
+    {
+        score += amount;
+        UIManager.Instance.UpdateScore();
+    }
+
+    public void TriggerGameOver()
+    {
+        Lives = 0;
+    }
+
     public bool TryAddLife()
     {
         if (lives >= MaxLives) return false;

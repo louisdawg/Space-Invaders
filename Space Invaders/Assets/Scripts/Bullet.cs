@@ -10,7 +10,8 @@ public class Bullet : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        GetComponent<Rigidbody2D>().linearVelocity = Vector3.up * speed;
+        // Fly in the direction the bullet is rotated to (its local up axis).
+        GetComponent<Rigidbody2D>().linearVelocity = transform.up * speed;
     }
 
     void Update()
@@ -24,14 +25,14 @@ public class Bullet : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Invader"))
+        if (collision.TryGetComponent(out Invader invader))
         {
-            GameManager.Instance.Score++;
-            Debug.Log("Score: " + GameManager.Instance.Score);
-
-            UIManager.Instance.UpdateScore();
-            
-            Destroy(collision.gameObject);
+            invader.Die();
+            Destroy(gameObject);
+        }
+        else if (collision.TryGetComponent(out ChasingEnemy chasingEnemy))
+        {
+            chasingEnemy.Die();
             Destroy(gameObject);
         }
     }
